@@ -1,0 +1,320 @@
+body{
+    margin : 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Dekko', cursive;
+    background-color: #008090;
+}
+
+p{
+    color: #01271C;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/********************************BANNER******************************/
+/*écran PC*/
+header{
+    height: 20%;
+    background-color: #FFAD05;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    /*position: fixed;*/
+    top: 0;
+    width : 100%;
+}
+
+.title_site{
+    width: 60%;
+}
+
+/*nav bar avec les icones à droite*/
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nav_Accueil{
+    font-size: 3em;
+}
+
+/*Titre Just Weborn Project à gauche*/
+h1{
+    font-family: 'Finger Paint', cursive;
+    color: #01271C;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header_character{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+footer>img
+{
+    height: 100px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+/************************Partie SECTION*****************************/
+/* Icone centrale avec icone de contact */
+.character{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -80px;
+    margin-bottom: -30px;
+}
+
+.character_name{
+    font-family: 'Finger Paint', cursive;
+    color: #FFAD05;
+    font-size: 3em;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+
+.identity_icon{
+    position: relative;
+    top: -330px;
+    left: -170px;
+}
+
+/*position des articles dans la section*/
+
+
+.section_person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.article_person{
+    width: 700px;
+    height : 500px;
+    background-color:#FFAD05;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:2%;
+    margin-right: 2%;
+    padding: 0.5em;   
+}
+
+h2{
+    font-family: 'Finger Paint', cursive;
+    margin-top: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*************Partie Qui suis je ? ****************/
+.whoIAm{
+    opacity: 0;
+    font-size: 1rem;
+
+}
+
+.personnalities{
+    float: left;
+    margin-right: 1.5em;
+    height: 350px;
+}
+
+.personnalities>div{
+    text-align: center;
+}
+
+span{
+    font-weight: bold;
+    margin-right: 0.3em;
+}
+
+.punchline{
+    font-size: 1.3rem;
+    font-style: oblique;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    font-size: 1rem;
+}
+.personnalities>div>a
+{
+    font-size: 1.4rem;
+}
+#iconCV{
+    margin-left: 15%;
+    width: 50px;
+    height: 50px;
+}
+/*****************Partie HOBBIES ***************/
+.icone_hobbies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/******************Partie CONTACT ***************/
+
+.contact_link{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+/******************Partie FOOTER ****************/
+
+footer{
+    padding: 13px 0;
+    background-color: #FFAD05;
+}
+
+.icone_hobbies>img{
+    margin: 3rem 3rem;
+}
+
+/*****************************Partie Responsiv*************************/
+
+/**********écran tablette et plus petit*************/
+
+/*banniere*/
+@media screen and (min-width : 0px) and (max-width : 1100px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .title_site{
+        width: 70%;
+    }
+
+    h1{
+        font-size: 5em;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        width: 29%;
+    }
+
+    .header_character{
+        display: block;
+        text-align: center;   
+    }
+
+    .character_name{
+        color: #01271C;
+    }
+
+/*section agencement*/
+    .section_person{
+        justify-content: center;
+    }
+
+    .article_person{
+        height: auto;
+    }
+
+/*bloc qui suis-je ?*/
+    .personnalities{
+        margin-right: 2em;
+        height: 150px;
+        float: none;
+        text-align: center;
+    }
+
+    ul{
+        padding-left: 0;
+        text-align:center;
+    }
+
+    .punchline{
+        margin-top: 2rem;
+    }
+
+/*disparition de l'icone centrale au profit de celle dans le menu*/
+    .character{
+        display: none;
+    }
+
+/*bloc contact*/
+    .contact_link{
+        margin-top: 0;
+    }
+
+/*bloc contact*/
+    .icone_hobbies>img{
+        margin: 1.5rem 1.5rem;
+    }
+}
+
+/*********écran 1400px pour garder le meme agencement que les laptop 16/9 ********/
+
+@media screen and (min-width : 1100px) and (max-width : 1700px){
+    .article_person{
+        width: 550px;
+    }
+
+    .icone_hobbies>img{
+        margin: 2.5rem 1.5rem;
+    }
+}
+
+
+/**************************Accueil*****************************/
+
+
+
+.presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.presentation>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    height : auto;
+    background-color:#FFAD05;
+    margin: 50px 10px;
+}
+
+.presentation>img{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+
+
+
+
+
+
