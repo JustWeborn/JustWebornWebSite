@@ -207,7 +207,7 @@ footer{
 /**********écran tablette et plus petit*************/
 
 /*banniere*/
-@media screen and (min-width : 0px) and (max-width : 1100px){
+@media screen and (min-width : 0px) and (max-width : 1350px){
     header{
         display: flex;
         flex-direction: row;
@@ -279,7 +279,7 @@ footer{
 
 /*********écran 1400px pour garder le meme agencement que les laptop 16/9 ********/
 
-@media screen and (min-width : 1100px) and (max-width : 1700px){
+@media screen and (min-width : 1350px) and (max-width : 1700px){
     .article_person{
         width: 550px;
     }
