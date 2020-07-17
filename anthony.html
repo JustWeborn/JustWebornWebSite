@@ -9,7 +9,7 @@
     <title>Just Weborn Project</title>
     
 </head>
-<body>
+<body onload="shifted()">
     <header>
         <div class="title_site"><h1>Just Weborn Project</h1>
             <!--Icone centrale--> 
@@ -20,11 +20,11 @@
         </div>
         <nav>
             <a href="index.html"><img src="picture/home.png" width="70px" alt="icone d'accueil"></a>
-            <a href="eric.html"><img src="picture/eric.png" width="80px" alt="Eric identité" title="Eric"></a>
-            <a href="guillaume.html"><img src="picture/guillaume.png" width="80px" alt="Guillaume identité" title="Guillaume"></a>
-            <a href="Philippe.html"><img src="picture/philippe.png" width="80px" alt="Philippe identité" title="Philippe"></a>
-            <a href="nicolas.html"><img src="picture/nicolas frey.png" width="80px" alt="Nicolas identité" title="Nicolas"></a>
-            <a href="anthony.html"><img src="picture/anthony.png" width="80px" alt="Anthony identité" title="Anthony"></a>
+            <a class="person" href="eric.html"><img src="picture/eric.png" width="80px" alt="Eric identité" title="Eric"></a>
+            <a class="person" href="guillaume.html"><img src="picture/guillaume.png" width="80px" alt="Guillaume identité" title="Guillaume"></a>
+            <a class="person" href="Philippe.html"><img src="picture/philippe.png" width="80px" alt="Philippe identité" title="Philippe"></a>
+            <a class="person" href="nicolas.html"><img src="picture/nicolas frey.png" width="80px" alt="Nicolas identité" title="Nicolas"></a>
+            <a class="person" href="anthony.html"><img src="picture/anthony.png" width="80px" alt="Anthony identité" title="Anthony"></a>
         </nav>
     </header>
     <div class="inter"></div>
@@ -83,7 +83,8 @@
             <div class="contact_link">
                 <a href="https://www.facebook.com/anthony.dottesi.5"><img src="picture/facebook.png"  alt="icone de facebook"></a>
                 <a href="https://www.linkedin.com/in/anthony-dottesi-683520152/"><img src="picture/linkedin.png" alt="icone de linkdein"></a>
-                <a href="mailto:a.dottesi@hotmail.fr"><img src="picture/email.png" alt="écrire un email"></a>   
+                <a href="mailto:a.dottesi@hotmail.fr"><img src="picture/email.png" alt="écrire un email"></a>
+                <a href="https://github.com/AnthonyCamelCase"><img src="picture/github.png"  alt="icone GitHub" class="github"></a>   
             </div>
                  </article> 
     </section>
@@ -92,5 +93,6 @@
         <img src="picture/cci.png" alt="cci des vosges">
         <p>&#xA9;JustWebornProject</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
