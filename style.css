@@ -185,6 +185,11 @@ ul{
     justify-content: space-around;
     margin-top: 150px;
 }
+.github{
+    width: 90px;
+    height: 90px;
+    margin-top: 8px;
+}
 
 /******************Partie FOOTER ****************/
 
