@@ -31,7 +31,7 @@
     <div class="inter"></div>
     <section class="section_person">
         <!--Bloc description-->
-        <article class="article_person" class="whoIAm">
+        <article class="article_person whoIAm hide">
             <h2>Qui suis-je ?</h2>
             <div class="personnalities">
                 <img src="picture/avocat_personnalities.png"    alt="16personnalities" width="auto" height="85%" title="Avocat">
@@ -56,7 +56,7 @@
             <p class="punchline"><span>Mon crédo :</span> "Moins tu dors plus t'es fort"</p>
         </article>
         <!--Bloc projet-->
-        <article class="article_person" class="project">
+        <article class="article_person project hide">
             <h2>Mon projet</h2>
             <p>Titulaire d'un BTS Systèmes Numériques et Réseau j'ai réalisé un Service Civique de 9 Mois en tant que "Community Manager" pour une association de Sport qui à réveillé en moi l'envie de poursuivre dans cette voie, je souhaiterai découvrir plus en profondeur les métiers du web que ce soit dans la programmation, le référencement etc.</p>
         </article>
@@ -64,10 +64,14 @@
         <div class="character">
             <h2 class="character_name">Guillaume</h2>
             <img class="persona_icone" src="picture/guillaume.png" width="300px" alt="Guillaume identité" title="Guillaume">
+            <img src="picture/identity.png" alt="icone d'identite" name="whoIAm" onclick="showOrHide(this.name)">
+            <img src="picture/project.png" alt="icone de projet" name="project" onclick="showOrHide(this.name)">
+            <img src="picture/hobby.png" alt="icone de hobby" name="hobbies" onclick="showOrHide(this.name)">
+            <img src="picture/contact.png" alt="icone de contact" name="Contact" onclick="showOrHide(this.name)">        
         </div>
 
         <!--Bloc hobbies-->
-        <article class="article_person" class="hobbies">
+        <article class="article_person hobbies hide">
             <h2>Mes centres d'intérêt</h2>
             <div class="icone_hobbies">
                 <img src="picture/naruto.png"  alt="icone de naruto" title="manga">
@@ -79,7 +83,7 @@
             </div>
         </article>
         <!--Bloc Contact-->
-        <article class="article_person" class="Contact">
+        <article class="article_person Contact hide">
             <h2>Contact</h2>
             <div class="contact_link">
                 <a href="#"><img src="picture/facebook.png"  alt="icone de facebook"></a>
