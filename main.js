@@ -12,12 +12,15 @@ function shifted() {
 }
 
 
-
+/* funtcion for showong or hiding section */
 function showOrHide (name) {
+    /* select the section wanted with the button */
     let elt = document.querySelector("."+ name);
+    /* show the section */
     if (elt.classList.contains("hide")) {
         elt.classList.remove("hide");
         elt.classList.add("show");
+    /* hide the section */
     } else {
         elt.classList.remove("show");
         elt.classList.add("hide");
