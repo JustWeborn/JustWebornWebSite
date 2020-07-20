@@ -30,7 +30,7 @@
     <div class="inter"></div>
     <section class="section_person">
         <!--Bloc description-->
-        <article class="article_person" class="whoIAm">
+        <article class="article_person whoIAm hide">
             <h2>Qui suis-je ?</h2>
             <div class="personnalities">
                 <img src="picture/innovateur.png"    alt="16personnalities" width="auto" height="85%" title="Innovateur">
@@ -54,7 +54,7 @@
             <p class="punchline"><span>Mon crédo :</span> "La connaissance juste pour soi ne sert a rien"</p>
         </article>
         <!--Bloc projet-->
-        <article class="article_person" class="project">
+        <article class="article_person project hide">
             <h2>Mon projet</h2>
             <p>Création d'une structure de développement de solution numérique</p>
         </article>
@@ -62,10 +62,14 @@
         <div class="character">
             <h2 class="character_name">Eric</h2>
             <img class="persona_icone" src="picture/eric.png" width="300px" alt="Eric identité" title="Eric">
+            <img class="identity_icon" src="picture/identity.png" alt="icone d'identite" name="whoIAm" onclick="showOrHide(this.name)">
+            <img class="project_icon" src="picture/project.png" alt="icone de projet" name="project" onclick="showOrHide(this.name)">
+            <img class="hobby_icon" src="picture/hobby.png" alt="icone de hobby" name="hobbies" onclick="showOrHide(this.name)">
+            <img class="contact_icon" src="picture/contact.png" alt="icone de contact" name="Contact" onclick="showOrHide(this.name)">            
         </div>
 
         <!--Bloc hobbies-->
-        <article class="article_person" class="hobbies">
+        <article class="article_person hobbies hide">
             <h2>Mes centres d'intérêt</h2>
             <div class="icone_hobbies">
                 <img src="picture/naruto.png"  alt="icone de naruto" title="manga">
@@ -77,7 +81,7 @@
             </div>
         </article>
         <!--Bloc Contact-->
-        <article class="article_person" class="Contact">
+        <article class="article_person Contact hide">
             <h2>Contact</h2>
             <div class="contact_link">
                 <a href="https://www.facebook.com/eric.maginot/"><img src="picture/facebook.png"  alt="icone de facebook"></a>

@@ -10,3 +10,16 @@ function shifted() {
         person[pos1].before(person[pos2]);
     }
 }
+
+
+
+function showOrHide (name) {
+    let elt = document.querySelector("."+ name);
+    if (elt.classList.contains("hide")) {
+        elt.classList.remove("hide");
+        elt.classList.add("show");
+    } else {
+        elt.classList.remove("show");
+        elt.classList.add("hide");
+    }      
+}
